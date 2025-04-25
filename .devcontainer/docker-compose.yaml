@@ -10,5 +10,3 @@ services:
     environment:
       - FLASK_ENV=development     
     command: sleep infinity
-volumes:
-  data:
