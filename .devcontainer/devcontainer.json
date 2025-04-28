@@ -2,5 +2,6 @@
     "dockerComposeFile": "docker-compose.yaml",
     "service": "devcontainer",
      "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
-     "postStartCommand": "pip install -r requirements.txt"
+     "postStartCommand": "pip install -r requirements.txt",
+     "shutdownAction": "stopCompose"
 }
