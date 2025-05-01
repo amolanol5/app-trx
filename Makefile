@@ -3,7 +3,7 @@ include .env
 start: setup-docker-compose  create-dynamodb-table list-tables
 
 setup-docker-compose:
-	docker-compose up -d
+	docker-compose up -d --build
 
 create-dynamodb-table:
 	docker-compose exec localstack awslocal dynamodb create-table \

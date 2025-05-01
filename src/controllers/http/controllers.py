@@ -29,4 +29,5 @@ def run_flask():
             password = data.get('password')
         
         return service_auth_token.apply(username, password)
+    
     return app

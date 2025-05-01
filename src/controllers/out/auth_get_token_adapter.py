@@ -1,4 +1,3 @@
-import boto3
 from domain.interfaces.auth_get_token_interface import InterfaceAuthToken
 from src.commons.config import Config
 from src.controllers.out.client_cognito import CognitoClient
