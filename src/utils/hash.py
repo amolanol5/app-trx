@@ -1,0 +1,13 @@
+import hmac
+import hashlib
+import base64
+
+def hash_secret_cognito(username: str, client_id: str, client_secret: str) -> str:
+    message = username + client_id
+    digest = hmac.new(
+        key=client_secret.encode('utf-8'),
+        msg=message.encode('utf-8'),
+        digestmod=hashlib.sha256
+    ).digest()
+    
+    return base64.b64encode(digest).decode()
