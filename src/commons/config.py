@@ -11,3 +11,5 @@ class Config:
     AWS_ACCESS_KEY = os.environ.get('AWS_ACCESS_KEY')
     AWS_SECRET_KEY = os.environ.get('AWS_SECRET_KEY')
     AWS_REGION = os.environ.get('AWS_REGION')
+    APP_PORT = os.environ.get('APP_PORT')
+    HOST = os.environ.get('HOST')
